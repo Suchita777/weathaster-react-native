@@ -44,7 +44,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(async () => {
       await schedulePushNotification();
-    }, 10000);
+    }, 600000);
     return () => clearInterval(interval);
   }, []);
 
