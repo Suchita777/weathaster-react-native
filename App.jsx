@@ -58,7 +58,7 @@ export default function App() {
       <WebView
         originWhitelist={["*"]}
         source={{
-          uri: "https://pushpak90.github.io/weather90.github.io/",
+          uri: "https://suchita777.github.io/weather",
         }}
       />
     </View>
