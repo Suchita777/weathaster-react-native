@@ -8,7 +8,7 @@ Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
     shouldPlaySound: false,
-    shouldSetBadge: false,
+    shouldSetBadge: true,
   }),
 });
 
@@ -44,7 +44,7 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(async () => {
       await schedulePushNotification();
-    }, 600000);
+    }, 120000);
     return () => clearInterval(interval);
   }, []);
 
